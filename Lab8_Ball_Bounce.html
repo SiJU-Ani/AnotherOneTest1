@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ball Animation</title>
+  <style>
+    body {
+	  display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 30 ;
+      background-color: cyan;
+    }
+
+    .Ball {
+
+      position: absolute;
+	  top: 0;
+      animation: MoveBall 5s linear infinite;
+    }
+
+    @keyframes MoveBall {
+      0% {
+        top: 0;
+		fill: red;
+      }
+      50% {
+        top: 50%;
+		fill: pink;
+      }
+      100% {
+        bottom: 100%;
+		fill: green;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="Ball">
+  
+		<svg width="200" height="200">
+		<circle cx="100" cy="100" r="50"  />
+		</svg>
+
+  </div>
+</body>
+</html>
